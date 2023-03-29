@@ -25,7 +25,7 @@ function NavbarFront(){
                         <li className="nav-item nav-pills ms-3 custom-link">
                             <Link to= "/about">About</Link>
                         </li>
-                    
+
                         {/* <li className="nav-item ms-3 custom-link">
                             <Link to= "register">Signup</Link>
                         </li> */}
