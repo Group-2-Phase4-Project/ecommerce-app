@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react'
+import ProductGrid from '../components/Product/ProductGrid'
 
-
-
-
-function Products (){
-    return(
-        <div>
-            <h1>Products</h1>
-        </div>
+function Products() {
+    return (
+        <>
+            <ProductGrid/>
+        </>
     )
 }
 
-export default Products;
+export default Products

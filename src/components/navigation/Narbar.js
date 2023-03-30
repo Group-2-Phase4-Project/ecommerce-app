@@ -1,73 +1,47 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Products from "../../pages/Products";
-import Cart from "../../pages/Cart";
-import Orders from "../../pages/Orders";
-import NewArrivals from "../../pages/NewArrivals";
-import Logout from "../auth/Logout";
-import Footer from "../footer/Footer";
+import React, {useContext} from 'react'
+import { StateContext } from '../../context/GlobalState'
+import {Link} from 'react-router-dom'
+import './header.css'
 
+function Navbar() {
+    // consuming context
+    const {totalItems, favoriteItems} = useContext(StateContext)
 
-
-import "./header.css"
-
-
-function Navbar(){
-
-    // const {totalItems, favoriteItems} = useContext(StateContext)
-
-    return(
-        <Router>
-            
-            <nav >
-                <div className="logo">
+    // render JSX
+    return (
+        <nav>
+            <div className="logo">
                     <Link to='/'>EasyShop</Link>
-                </div>
-                <div className="container-fluid">
-                    <ul className="nav-items">
-                        <li>
-                            <Link to= "/">Products</Link>
-                        </li>
-                      
-                        <li >
-                            <Link to= "/new-arrivals">New Arrivals</Link>
-                        </li>
-          
-                    </ul>
-                </div>
-                <div className="nav-items">
+            </div>
+            <div className="container-fluid">
+                <ul className="nav-items">
+                    <li><Link to='/'>Products</Link></li>
+                    <li><Link to='/new-arrivals'>New Arrivals</Link></li>
+                    {/* <li><Link to='/about'>About</Link></li> */}
                     
-                        <ul className="nav-icons">
-                            <li>
-                                <Link to="/orders ">Orders</Link>
-                            </li>
-                            <li> 
-                                <Link to='/cart'>
-                                <i class="ri-shopping-cart-line"></i>
-                                    {/* <span className="item-count">{totalItems}</span> */}
-                                </Link>
-                            </li>
-                            <li>
-                            <Link to='/logout'><i class="ri-logout-circle-r-line"></i></Link>
-                            </li>
-                            
-                        </ul>
-                    
-                </div>
-            </nav>
-            <Routes>
-                <Route path="/" element={<Products/>}/>
-                <Route path="/cart" element={<Cart/>}/>
-                <Route path="/orders" element={<Orders/>}/>
-                <Route path="/new-arrivals" element={<NewArrivals/>}/>
-                <Route path="/logout" element={<Logout/>}/>
-            </Routes>
+                </ul>
+            </div>
+            <div className="nav-items">
+                <ul className="nav-icons">
+                    <li>
+                        <Link to='/wishlist'>
+                            <i class="ri-heart-add-line"></i>
+                            <span className="item-count">{favoriteItems.length}</span> 
+                        </Link>
+                    </li>
+                    <li> 
+                        <Link to='/cart'><i class="ri-shopping-cart-line"></i>
+                            <span className="item-count">{totalItems}</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/logout'><i class="ri-logout-circle-r-line"></i></Link>
+                    </li>
+                </ul>
+            </div>
 
-            <Footer />
-        </Router>
-            
+        </nav>
     )
 }
-
 
 export default Navbar;
