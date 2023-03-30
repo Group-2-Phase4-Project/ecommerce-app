@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-function Register (){
+function Signup (){
     return(
         <div>
             <h1>Signup</h1>
@@ -11,4 +11,4 @@ function Register (){
     )
 }
 
-export default Register;
+export default Signup;

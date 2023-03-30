@@ -4,6 +4,7 @@ import About from "../../pages/About";
 import Home from "../../pages/Home";
 import Login from "../auth/Login";
 import Footer from "../footer/Footer";
+import Signup from "../auth/Signup";
 
 
 import './navbar.css'
@@ -50,6 +51,7 @@ function NavbarFront(){
                 <Route path="/" element={<Home/>}/>
                 <Route path="/About" element={<About/>}/>
                 <Route path="/Login" element={<Login/>}/>
+                <Route path="/signup" element={<Signup/>}/>
             </Routes>
             {/* <div className="footer">
             <p>&copy; 2023 EasyShop. All rights reserved.</p>
