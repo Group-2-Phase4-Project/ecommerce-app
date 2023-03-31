@@ -1,14 +1,19 @@
-import React from "react";
 
-import '../assets/about.css'
+import React from 'react';
 
+import '../assets/about.css';
 
-function About (){
-    return(
-        <div>
-            <h1>ABOUT US</h1>
-        </div>
-    )
-}
+const About = () => {
+  return (
+    <div className='aboutcontainer'>
+   
+             
+            
+            
+   
+ 
+    </div>
+  );
+};
 
 export default About;

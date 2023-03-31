@@ -1,0 +1,10 @@
+.aboutcontainer {
+    height: 100%;
+    background: url(https://i0.wp.com/blog.publer.io/wp-content/uploads/2022/07/online-shopper.jpg?resize=1024%2C683&ssl=1) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+   
+}
