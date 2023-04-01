@@ -1,10 +1,43 @@
-.aboutcontainer {
-    height: 100%;
-    background: url(https://i0.wp.com/blog.publer.io/wp-content/uploads/2022/07/online-shopper.jpg?resize=1024%2C683&ssl=1) center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 100%;
+.cardi img {
+    width: 100%;
+    height: 390px;
+  
+  }
+  
+  .about-section {
+    background: url('https://cdn.create.vista.com/api/media/medium/605782416/stock-photo-beautiful-young-woman-shopping-bags?token=') no-repeat ;
+    background-size: 100% auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    max-width: 1800px;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: block;
+  }
+  .animated-paragraph{
+   margin-bottom: 0;
+    font-size: 19px;
+    max-width: 62%;
+  }
+  .animated-heading{
+    font-size: 30px;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    
+  }
+  .cardi{
+    padding: 3px;
+    background-color: rgb(236, 232, 219);
+    width: auto;
+    height: 500px;
    
-}
+  }
+  .easyshop-text{
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .easyshop-texts{
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
