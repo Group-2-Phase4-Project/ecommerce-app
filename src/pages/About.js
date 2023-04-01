@@ -94,7 +94,7 @@ const About = () => {
   return (
     <div className='landing-page'>
       <div className='about-section'>
-        
+      <div className='animated-container'>
         <h1 className="animated-heading">We Are <span class="easyshop-text">EasyShop</span></h1>
         <p className="animated-paragraph" style={{ fontStyle: 'italic', color: 'black' }}>
           Welcome to <b><span class="easyshop-texts">EasyShop</span></b> We are your one-stop-shop for all your fashion needs. Our online store offers a wide selection of shoes, clothes, bags, and watches for men, women, and children. We are passionate about providing our customers with high-quality products at affordable prices.
@@ -108,6 +108,7 @@ const About = () => {
         <p className="animated-paragraph" style={{ fontStyle: 'italic', color: 'black' }}>
           Thank you for choosing <b><span class="easyshop-texts">EasyShop</span></b> for your fashion needs. We are committed to providing you with the best shopping experience possible. Happy shopping!
         </p>
+      </div>
       </div>
 
       <div className='card-container'>

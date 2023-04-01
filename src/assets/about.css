@@ -41,3 +41,73 @@
     font-size: 23px;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
+  .animated-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .animated-heading {
+    text-align: center;
+    animation: slide-in 2s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .animated-paragraph {
+    opacity: 0;
+    animation: fade-in 3s ease-in-out forwards;
+  }
+  
+  .animated-paragraph:nth-of-type(1) {
+    animation-delay: 1s;
+  }
+  
+  .animated-paragraph:nth-of-type(2) {
+    animation-delay: 2s;
+  }
+  
+  .animated-paragraph:nth-of-type(3) {
+    animation-delay: 3s;
+  }
+  
+  .animated-paragraph:nth-of-type(4) {
+    animation-delay: 4s;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .easyshop-text {
+    animation: flip-in 1s ease-in-out forwards;
+  }
+  
+  @keyframes flip-in {
+    0% {
+      transform: perspective(400px) rotateY(-90deg);
+    }
+    100% {
+      transform: perspective(400px) rotateY(0deg);
+    }
+  }
+  
+  .easyshop-texts {
+    font-weight: bold;
+    color: #ae5905;
+  }
