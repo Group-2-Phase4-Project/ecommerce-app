@@ -1,45 +1,83 @@
+# EasyShop
+
 ## Description
-Welcome to our eCommerce app! EasyShop is designed to provide a convenient and secure way for users to shop for cloth items like hoodies, T-shirts, Jeans etc and accessories like watches online.
+EasyShop is designed to provide a convenient and secure way for users to shop for cloth items like hoodies, T-shirts, Jeans etc and accessories like watches online.
 With our app, users can browse through a wide range of products, add them to their cart, and complete their purchases with ease.
-To enhance the user experience, our app offers various features such as search and filter functionalities, user accounts, and order history.
-Our app has been designed with security in mind, ensuring that user information and transactions are kept safe and protected.
-## Development Requirement
-- Visual StudioCode.
-- Live server extension.
-## Development Installattion
-To get the code .
-## project Set-up
-### Option 1 (live link)
-If you want to see the app running in real-time directly, you can just click on this link:
-[<frontend-link>]
-### Option 2 (Cloning the repository)
-1. Cloning the repository:
-on your terminal run;
-     git clone git@github.com:Group-2-Phase4-Project/ecommerce-app.git on your terminal
-2. Move to the folder and install requirements
-3. `cd ecommerce-app`
-4. Open the directory with your preferd application(prefereably VScode)
-5. Make sure you `install npm` for the required dependancies to be added.
-6. Open the application on your prefered browser.
-7. Run `npm start` to view the app in your prefered browser.
-## Running the Application and Features
-### User Story
--As a user when you visit the app you should be prompted to the login page, where if you don't have an existing accout you can first sign up, then log in or you can reset your password if you had an account but forgot the password.
--As a user when you successfully login the app, you should see a homepage that displays the products. You should be able to easily browse through different categories of clothes like male or female.
--When I find a product I like, I want to be able to view multiple images of the product, read a detailed description, and see its price and availability.
--I should be able to add the product to my cart with just one click, and continue shopping without losing the items in my cart. I should also be able to see the total cost of my items, and when I am ready to checkout, you should be able to make payment
-## Technology Used
-* React
-* JSON server
-* Npm dependencies
-## Contributors
-- Diana Maritim
-- Enock Kikoech
-- Fred Murigi
-- Evalyne Wanjiku
-## Contact Information
-If you have any question or contributions, please email any of our contributors at:
-[diana.chepkorir@student.moringaschool.com]
-[enock.kipkoech@student.moringaschool.com]
-[fred.murigi@student.moringaschool.com]
-[evalyne.wambui@student.moringaschool.com]
+
+Link to Deployed project : 
+
+[![Click Me](https://img.shields.io/badge/Click%20Me-red?style=for-the-badge)](https://my-easy-shop.netlify.app/)
+
+## Technologies Used
+- ReactJS
+- Netlify (for frontend deployement)
+- Render (for backend deployment)
+- Ruby on Rails
+- SQLite3 for the database management
+
+# Getting Started
+In order for you to use the content on this repo ensure you have the following:
+- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
+- nodejs 9.0+
+
+## Installation
+To use this repo on your machine requires some simple steps
+### Alternative One
+- Open a terminal / command line interface on your computer
+- Clone the repo by using the following:
+
+        git clone https://github.com/Group-2-Phase4-Project/ecommerce-app.git
+- This creates a copy on your local machine for you.
+- Change directory to the repo folder:
+
+        cd ecommerce-app
+
+- (Optional) Open it in ``Visual Studio Code``
+
+        code .
+- (Alternate Option) Open it in any editor of your choice.
+
+- Hurray! You are one step closer to being as intelligent as Einstein.
+
+### Alternative Two
+- On the top right corner of this page there is a button labelled ``Fork``.
+- Click on that button to fork the repo to your own account.
+- Take on the process in ``Alternative One`` above.
+- Remember to replace your username when cloning.
+
+        git clone https://github.com/your username/ecommerce-app.git
+
+# Running the application
+Running the application is very straight forward. You can use the following steps to run the app.
+
+- Install required dependencies from npm
+
+      npm install
+- Run the application on the browser
+
+      npm start
+
+# Demo
+This app has been deployed and can be opened in the browser using the following url:
+
+[![Click Me](https://img.shields.io/badge/Click%20Me-red?style=for-the-badge)](https://my-easy-shop.netlify.app/)
+
+- Login
+     
+
+
+
+# Authors
+This project was made with ❤️ and ☕ by:
+
+[Fred Murigi](https://github.com/Freddie16)
+
+[Enock Lagat](https://github.com/e-nk)
+
+[Diana Maritim](https://github.com/DianaCmaritim)
+
+[Evalyne Wambui](https://github.com/Evalyne306)
+
+# License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
