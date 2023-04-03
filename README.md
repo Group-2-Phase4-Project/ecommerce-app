@@ -62,8 +62,26 @@ This app has been deployed and can be opened in the browser using the following 
 
 [![Click Me](https://img.shields.io/badge/Click%20Me-red?style=for-the-badge)](https://my-easy-shop.netlify.app/)
 
+
+- Home
+
+![Home](https://github.com/Group-2-Phase4-Project/ecommerce-app/blob/main/images/home.png?raw=true)
+
+
 - Login
-     
+
+![Login](https://github.com/Group-2-Phase4-Project/ecommerce-app/blob/main/images/login.png?raw=true)
+
+- Products
+
+![Products](https://github.com/Group-2-Phase4-Project/ecommerce-app/blob/main/images/products.png?raw=true)
+
+- Cart
+
+![Cart](https://github.com/Group-2-Phase4-Project/ecommerce-app/blob/main/images/cart.png?raw=true)
+
+
+
 
 
 
