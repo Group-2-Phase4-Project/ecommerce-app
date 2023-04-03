@@ -1,70 +1,45 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Description
+Welcome to our eCommerce app! EasyShop is designed to provide a convenient and secure way for users to shop for cloth items like hoodies, T-shirts, Jeans etc and accessories like watches online.
+With our app, users can browse through a wide range of products, add them to their cart, and complete their purchases with ease.
+To enhance the user experience, our app offers various features such as search and filter functionalities, user accounts, and order history.
+Our app has been designed with security in mind, ensuring that user information and transactions are kept safe and protected.
+## Development Requirement
+- Visual StudioCode.
+- Live server extension.
+## Development Installattion
+To get the code .
+## project Set-up
+### Option 1 (live link)
+If you want to see the app running in real-time directly, you can just click on this link:
+[<frontend-link>]
+### Option 2 (Cloning the repository)
+1. Cloning the repository:
+on your terminal run;
+     git clone git@github.com:Group-2-Phase4-Project/ecommerce-app.git on your terminal
+2. Move to the folder and install requirements
+3. `cd ecommerce-app`
+4. Open the directory with your preferd application(prefereably VScode)
+5. Make sure you `install npm` for the required dependancies to be added.
+6. Open the application on your prefered browser.
+7. Run `npm start` to view the app in your prefered browser.
+## Running the Application and Features
+### User Story
+-As a user when you visit the app you should be prompted to the login page, where if you don't have an existing accout you can first sign up, then log in or you can reset your password if you had an account but forgot the password.
+-As a user when you successfully login the app, you should see a homepage that displays the products. You should be able to easily browse through different categories of clothes like male or female.
+-When I find a product I like, I want to be able to view multiple images of the product, read a detailed description, and see its price and availability.
+-I should be able to add the product to my cart with just one click, and continue shopping without losing the items in my cart. I should also be able to see the total cost of my items, and when I am ready to checkout, you should be able to make payment
+## Technology Used
+* React
+* JSON server
+* Npm dependencies
+## Contributors
+- Diana Maritim
+- Enock Kikoech
+- Fred Murigi
+- Evalyne Wanjiku
+## Contact Information
+If you have any question or contributions, please email any of our contributors at:
+[diana.chepkorir@student.moringaschool.com]
+[enock.kipkoech@student.moringaschool.com]
+[fred.murigi@student.moringaschool.com]
+[evalyne.wambui@student.moringaschool.com]

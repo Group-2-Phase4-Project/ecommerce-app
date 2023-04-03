@@ -19,7 +19,7 @@ function StateProvider({children}){
 
 
     // fetching product data
-    const url = "https://api.npoint.io/9e7ccc1f90d120f07824"
+    const url = "https://api.npoint.io/7f028299b963a423c644"
     
     useEffect(() => {
         fetch(url)

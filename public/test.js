@@ -50,7 +50,7 @@ function App() {
         <Route path="/logout">
           <Logout onLogout={handleLogout} />
         </Route>
-        <Route path="/">
+        <Route path="/home">
           <Home/>
         </Route>
         <Route path="/about">

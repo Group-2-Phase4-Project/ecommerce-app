@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import { StateContext } from '../../context/GlobalState'
+import { StateContext } from '../../context/NewStatey'
 import {useParams} from 'react-router-dom'
 
-function ProductDetail() {
+function NewArrivalDetail() {
     // consuming contexts
     const {addToCart} = useContext(StateContext)
 
@@ -29,7 +29,7 @@ function ProductDetail() {
                             </div>
                             <div className="product-detail-info">
                                 <h3>{product.name}</h3>
-                                <h3>{product.category.name}</h3>
+                                <h3>{product.category}</h3>
                                 <h3>{product.price}</h3>
                                 {/* <h4>${product.price}</h4> */}
                                 <p className="lead">{product.description}</p> 
@@ -44,4 +44,4 @@ function ProductDetail() {
     )
 }
 
-export default ProductDetail
+export default NewArrivalDetail

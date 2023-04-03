@@ -35,42 +35,78 @@ function Cart() {
 //   };
 
         // handle checkout
+// const handleCheckout = async (token) => {
+//     const amount = total * 100; // convert to cents
+//     const stripe = window.Stripe('pk_test_51MrL2nBvyxhYJyMHh4mvUj6DPtgjON6W3aA9REJpQtVCUdmyqcVqpCwO0K78cHVibtStyPTJ15b6A7QmPoqQeZbp006Dn7zSRg');
+  
+//     try {
+//       const { error } = await stripe.redirectToCheckout({
+//         lineItems: [
+//           {
+//             price_data: {
+//               currency: 'usd',
+//               product_data: {
+//                 name: 'Total amount',
+//               },
+//               unit_amount: amount,
+//             },
+//             quantity: 1,
+//           },
+//         ],
+//         mode: 'payment',
+//         successUrl: `${window.location.origin}/success`,
+//         cancelUrl: `${window.location.origin}/cancel`,
+//         customerEmail: token.email,
+//       });
+  
+//       if (error) {
+//         console.error(error);
+//       } else {
+//         // Payment succeeded
+//         //resetCart(); // Clear the cart
+//         window.location.reload();
+//       }
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   };
+  // handle checkout
 const handleCheckout = async (token) => {
-    const amount = total * 100; // convert to cents
-    const stripe = window.Stripe('pk_test_51MrL2nBvyxhYJyMHh4mvUj6DPtgjON6W3aA9REJpQtVCUdmyqcVqpCwO0K78cHVibtStyPTJ15b6A7QmPoqQeZbp006Dn7zSRg');
-  
-    try {
-      const { error } = await stripe.redirectToCheckout({
-        lineItems: [
-          {
-            price_data: {
-              currency: 'usd',
-              product_data: {
-                name: 'Total amount',
-              },
-              unit_amount: amount,
+  const amount = total * 100; // convert to cents
+  const stripe = window.Stripe('pk_test_...');
+
+  try {
+    const { error } = await stripe.redirectToCheckout({
+      lineItems: [
+        {
+          price_data: {
+            currency: 'usd',
+            product_data: {
+              name: 'Total amount',
             },
-            quantity: 1,
+            unit_amount: amount,
           },
-        ],
-        mode: 'payment',
-        successUrl: `${window.location.origin}/success`,
-        cancelUrl: `${window.location.origin}/cancel`,
-        customerEmail: token.email,
-      });
-  
-      if (error) {
-        console.error(error);
-      } else {
-        // Payment succeeded
-        //resetCart(); // Clear the cart
-        window.location.reload();
-      }
-    } catch (error) {
+          quantity: 1,
+        },
+      ],
+      mode: 'payment',
+      successUrl: `${window.location.origin}/success`,
+      cancelUrl: `${window.location.origin}/cancel`,
+      customerEmail: token.email,
+    });
+
+    if (error) {
       console.error(error);
+    } else {
+      // Payment succeeded
+      localStorage.setItem('cartItems', JSON.stringify(cartItems)); // Save cart items to local storage
+      window.location.reload();
     }
-  };
-  
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 
   // render JSX
   return (

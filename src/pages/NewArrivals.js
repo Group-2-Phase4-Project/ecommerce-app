@@ -1,14 +1,17 @@
 import React from "react";
+import NewArrivalGrid from '../components/NewArrival/NewArrivalGrid'
 
 
 
 
 function NewArrivals (){
     return(
-        <div>
-            <h1>NewArrivals</h1>
-        </div>
+           <>
+                <NewArrivalGrid/>
+            </>
+      
     )
 }
 
 export default NewArrivals;
+

@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
-import { StateContext } from '../../context/GlobalState'
+import { StateContext } from '../../context/NewState'
 import {Link} from 'react-router-dom'
 
-function ProductItem({product}) {
+function NewArrivalItem({product}) {
     // consuming contexts
     const {addToCart, favoriteItems, addToFavorite, removeFromFavorite} = useContext(StateContext)
 
@@ -42,7 +42,7 @@ function ProductItem({product}) {
                 {/* product description */}
                 {/* <h5>{product.description}</h5> */}
                 {/* product department */}
-                <h5>Category: {product.category.name}</h5>
+                <h5>Category: {product.category}</h5>
                 
                  {/* product price */}
                 <h6>KES {product.price}</h6>
@@ -64,4 +64,4 @@ function ProductItem({product}) {
     )
 }
 
-export default ProductItem
+export default NewArrivalItem

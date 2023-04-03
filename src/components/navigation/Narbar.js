@@ -11,13 +11,13 @@ function Navbar() {
     return (
         <nav>
             <div className="logo">
-                    <Link to='/'>EasyShop</Link>
+                    <Link to='/products'>EasyShop</Link>
             </div>
             <div className="container-fluid">
                 <ul className="nav-items">
-                    <li><Link to='/'>Products</Link></li>
+                    <li><Link to='/products'>Products</Link></li>
                     <li><Link to='/new-arrivals'>New Arrivals</Link></li>
-                    {/* <li><Link to='/about'>About</Link></li> */}
+                    <li><Link to='/orders'>Orders</Link></li>
                     
                 </ul>
             </div>
@@ -41,7 +41,9 @@ function Navbar() {
             </div>
 
         </nav>
+            
     )
+    
 }
 
 export default Navbar;

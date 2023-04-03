@@ -16,7 +16,7 @@ function NavbarFront(){
                 <div className="container-fluid">
                     <ul className="nav nav-pills mb-3 fs-3">
                         <li className="nav-item nav-pills ms-3 custom-link">
-                            <Link to= "/home">Home</Link>
+                            <Link to= "/">Home</Link>
                         </li>
                         <li className="nav-item nav-pills ms-3 custom-link">
                             <Link to= "/about">About</Link>
@@ -41,12 +41,7 @@ function NavbarFront(){
 
                 </div> */}
             </nav>
-
-
-           
-
-
-            
+         
        
     )
 }

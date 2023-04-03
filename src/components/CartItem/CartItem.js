@@ -30,7 +30,7 @@ function CartItem({item}) {
             <div className="product-info-col">
                 <img src={item.image_url} alt="product" />
                 <h5>{item.title}</h5>
-                <h5>Category: {item.category}</h5>
+                <h5>Category: {item.category.name}</h5>
                 <h5>Price: KES {item.price}</h5>
             </div>
             <div className="product-qty-col">

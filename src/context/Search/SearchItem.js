@@ -17,7 +17,7 @@ function Search({ products }) {
     let results = products.filter((product) => {
       return (
         product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        product.category.toLowerCase().includes(searchQuery.toLowerCase()) 
+        product.category.name.toLowerCase().includes(searchQuery.toLowerCase()) 
         //product.price.toString().includes(searchQuery)
       );
     });
